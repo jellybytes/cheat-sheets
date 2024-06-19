@@ -1,9 +1,13 @@
 # add user after fresh linux installation
 apt update && apt upgrade
+
+# add new root user
 apt insall sudo
-adduser xy
-usermod -aG sudo xy
-exit
+adduser username
+usermod -aG sudo username
+
+# remove user from group
+deluser username sudo
 
 # install ssh server
 sudo apt install openssh-server
