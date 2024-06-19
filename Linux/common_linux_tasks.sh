@@ -14,3 +14,7 @@ sudo apt install openssh-server
 sudo systemctl status ssh
 sudo service ssh start/enable
 sudo service ssh stop/disable
+# add public key
+mkdir .ssh/
+vim authorized_keys
+	-> paste public ssh key inside
