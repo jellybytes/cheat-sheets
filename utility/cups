@@ -1,0 +1,12 @@
+
+# Froot accout
+apt-get install avahi-daemon cups cups-pdf
+
+usermod -aG lpadmin username
+exit
+
+# login to cups user
+sudo cupsctl --remote-admin --remote-any --share-printers
+sudo systemctl restart cups
+
+http://X.X.X.X:631
